@@ -1,0 +1,1259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YOUR TEAM | Mobile Legends Esport</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Orbitron:wght@400;600;700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="noise"></div>
+<div id="cursor-trail"></div>
+
+<!-- NAVBAR -->
+<nav>
+  <a href="#" class="nav-logo">YOUR<span>TEAM</span></a>
+  <ul class="nav-links">
+    <li><a href="#roster">Roster</a></li>
+    <li><a href="#showcase">Showcase</a></li>
+    <li><a href="#achievements">Trophies</a></li>
+    <li><a href="#matches">Matches</a></li>
+    <li><a href="#sponsors">Sponsors</a></li>
+  </ul>
+  <a href="#" class="nav-cta">Join Discord</a>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-glow"></div>
+
+  <canvas id="hex-canvas" style="position:absolute;inset:0;width:100%;height:100%;z-index:0;pointer-events:none;"></canvas>
+
+  <div class="hero-content">
+    <div class="live-tag"><span class="live-dot"></span>SEASON 5 — ACTIVE</div>
+    <p class="hero-eyebrow">Mobile Legends: Bang Bang</p>
+    <h1 class="hero-title">
+      <span class="line1">YOUR</span>
+      <span class="line2">TEAM</span>
+    </h1>
+    <p class="hero-sub">Where shadows become legends</p>
+    <div class="hero-btns">
+      <a href="#roster" class="btn-primary">Meet The Team</a>
+      <a href="#matches" class="btn-secondary">View Matches</a>
+    </div>
+  </div>
+
+  <div class="scroll-indicator">
+    <span>SCROLL</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- STATS BAR -->
+<div class="stats-bar">
+  <div class="stat-item">
+    <div class="stat-num" data-count="312">0</div>
+    <div class="stat-label">Matches Played</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num" data-count="74">0<span style="font-size:20px">%</span></div>
+    <div class="stat-label">Win Rate</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num" data-count="18">0</div>
+    <div class="stat-label">Trophies Won</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num" data-count="4">0</div>
+    <div class="stat-label">World Rankings</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num" data-count="5">0</div>
+    <div class="stat-label">Active Players</div>
+  </div>
+</div>
+
+<!-- ROSTER -->
+<section id="roster">
+  <div class="section-header reveal">
+    <span class="section-tag">// SQUAD ROSTER</span>
+    <h2 class="section-title">THE <span>FIVE</span></h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="roster-grid reveal">
+    <!-- Player 1 -->
+    <div class="player-card">
+      <div class="player-number">01</div>
+      <div class="player-bg">
+        <div class="player-silhouette">
+          <svg class="char-svg" viewBox="0 0 220 340" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <radialGradient id="g1" cx="50%" cy="80%" r="60%">
+                <stop offset="0%" stop-color="#00f5ff" stop-opacity="0.3"/>
+                <stop offset="100%" stop-color="#00f5ff" stop-opacity="0"/>
+              </radialGradient>
+              <filter id="glow1">
+                <feGaussianBlur stdDeviation="3" result="blur"/>
+                <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+              </filter>
+            </defs>
+            <ellipse cx="110" cy="300" rx="70" ry="20" fill="url(#g1)"/>
+            <!-- Body -->
+            <rect x="85" y="150" width="50" height="90" rx="4" fill="rgba(0,245,255,0.15)" stroke="#00f5ff" stroke-width="1"/>
+            <!-- Head -->
+            <rect x="90" y="110" width="40" height="40" rx="6" fill="rgba(0,245,255,0.2)" stroke="#00f5ff" stroke-width="1.5"/>
+            <!-- Visor -->
+            <rect x="93" y="120" width="34" height="12" rx="2" fill="#00f5ff" opacity="0.6" filter="url(#glow1)"/>
+            <!-- Legs -->
+            <rect x="88" y="238" width="18" height="60" rx="3" fill="rgba(0,245,255,0.1)" stroke="#00f5ff" stroke-width="0.5"/>
+            <rect x="114" y="238" width="18" height="60" rx="3" fill="rgba(0,245,255,0.1)" stroke="#00f5ff" stroke-width="0.5"/>
+            <!-- Arms -->
+            <rect x="58" y="152" width="28" height="14" rx="3" fill="rgba(0,245,255,0.15)" stroke="#00f5ff" stroke-width="0.5" transform="rotate(-15,58,152)"/>
+            <rect x="134" y="152" width="28" height="14" rx="3" fill="rgba(0,245,255,0.15)" stroke="#00f5ff" stroke-width="0.5" transform="rotate(15,162,152)"/>
+            <!-- Weapon glow -->
+            <line x1="40" y1="162" x2="86" y2="155" stroke="#00f5ff" stroke-width="3" opacity="0.8" filter="url(#glow1)"/>
+            <!-- Energy lines -->
+            <line x1="110" y1="100" x2="110" y2="20" stroke="#00f5ff" stroke-width="0.5" stroke-dasharray="4,6" opacity="0.4"/>
+            <circle cx="110" cy="18" r="5" fill="#00f5ff" opacity="0.6" filter="url(#glow1)"/>
+          </svg>
+        </div>
+      </div>
+      <div class="player-overlay"></div>
+      <div class="player-card-bottom">
+        <div class="player-role role-mm">// MARKSMAN</div>
+        <div class="player-name">MM NAME</div>
+        <div class="player-alias">MM alias</div>
+      </div>
+    </div>
+
+    <!-- Player 2 -->
+    <div class="player-card">
+      <div class="player-number">02</div>
+      <div class="player-bg">
+        <div class="player-silhouette">
+          <svg class="char-svg" viewBox="0 0 220 340" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <radialGradient id="g2" cx="50%" cy="80%" r="60%">
+                <stop offset="0%" stop-color="#ff0033" stop-opacity="0.3"/>
+                <stop offset="100%" stop-color="#ff0033" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+            <ellipse cx="110" cy="300" rx="70" ry="20" fill="url(#g2)"/>
+            <!-- Cape-like shapes -->
+            <polygon points="70,140 110,100 150,140 145,240 75,240" fill="rgba(255,0,51,0.08)" stroke="#ff0033" stroke-width="0.5"/>
+            <!-- Body armor -->
+            <rect x="88" y="155" width="44" height="75" rx="3" fill="rgba(255,0,51,0.12)" stroke="#ff0033" stroke-width="1"/>
+            <!-- Head -->
+            <polygon points="110,95 135,115 125,150 95,150 85,115" fill="rgba(255,0,51,0.2)" stroke="#ff0033" stroke-width="1.5"/>
+            <!-- Eyes glow -->
+            <circle cx="100" cy="128" r="5" fill="#ff0033" opacity="0.8"/>
+            <circle cx="120" cy="128" r="5" fill="#ff0033" opacity="0.8"/>
+            <!-- Legs -->
+            <rect x="90" y="228" width="15" height="65" rx="2" fill="rgba(255,0,51,0.1)" stroke="#ff0033" stroke-width="0.5"/>
+            <rect x="115" y="228" width="15" height="65" rx="2" fill="rgba(255,0,51,0.1)" stroke="#ff0033" stroke-width="0.5"/>
+            <!-- Sword -->
+            <line x1="145" y1="100" x2="175" y2="240" stroke="#ff0033" stroke-width="2.5"/>
+            <rect x="137" y="95" width="16" height="8" rx="1" fill="#ff0033" opacity="0.9"/>
+          </svg>
+        </div>
+      </div>
+      <div class="player-overlay" style="border-color:rgba(255,0,51,0.3);background:rgba(255,0,51,0.04)"></div>
+      <div class="player-card-bottom">
+        <div class="player-role role-exp">// EXP LANE</div>
+        <div class="player-name">EXP NAME</div>
+        <div class="player-alias">EXP alias</div>
+      </div>
+    </div>
+
+    <!-- Player 3 -->
+    <div class="player-card">
+      <div class="player-number">03</div>
+      <div class="player-bg">
+        <div class="player-silhouette">
+          <svg class="char-svg" viewBox="0 0 220 340" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <radialGradient id="g3" cx="50%" cy="80%" r="60%">
+                <stop offset="0%" stop-color="#ffd700" stop-opacity="0.3"/>
+                <stop offset="100%" stop-color="#ffd700" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+            <ellipse cx="110" cy="300" rx="70" ry="20" fill="url(#g3)"/>
+            <!-- Robe -->
+            <polygon points="85,130 135,130 155,290 65,290" fill="rgba(255,215,0,0.06)" stroke="#ffd700" stroke-width="0.8"/>
+            <!-- Body -->
+            <rect x="90" y="135" width="40" height="70" rx="5" fill="rgba(255,215,0,0.12)" stroke="#ffd700" stroke-width="1"/>
+            <!-- Head with hat -->
+            <ellipse cx="110" cy="115" rx="22" ry="22" fill="rgba(255,215,0,0.18)" stroke="#ffd700" stroke-width="1.5"/>
+            <polygon points="88,110 132,110 110,70" fill="rgba(255,215,0,0.2)" stroke="#ffd700" stroke-width="1.5"/>
+            <!-- Staff -->
+            <line x1="60" y1="280" x2="80" y2="110" stroke="#ffd700" stroke-width="1.5"/>
+            <circle cx="79" cy="105" r="12" fill="none" stroke="#ffd700" stroke-width="1.5"/>
+            <circle cx="79" cy="105" r="5" fill="#ffd700" opacity="0.7"/>
+            <!-- Magic particles -->
+            <circle cx="60" cy="170" r="3" fill="#ffd700" opacity="0.6"/>
+            <circle cx="155" cy="190" r="2" fill="#ffd700" opacity="0.4"/>
+            <circle cx="140" cy="150" r="4" fill="#ffd700" opacity="0.5"/>
+          </svg>
+        </div>
+      </div>
+      <div class="player-overlay" style="border-color:rgba(255,215,0,0.3);background:rgba(255,215,0,0.04)"></div>
+      <div class="player-card-bottom">
+        <div class="player-role role-mid">// MID LANE</div>
+        <div class="player-name">Mid NAME</div>
+        <div class="player-alias">Mid alias</div>
+      </div>
+    </div>
+
+    <!-- Player 4 -->
+    <div class="player-card">
+      <div class="player-number">04</div>
+      <div class="player-bg">
+        <div class="player-silhouette">
+          <svg class="char-svg" viewBox="0 0 220 340" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <radialGradient id="g4" cx="50%" cy="80%" r="60%">
+                <stop offset="0%" stop-color="#b400ff" stop-opacity="0.3"/>
+                <stop offset="100%" stop-color="#b400ff" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+            <ellipse cx="110" cy="300" rx="70" ry="20" fill="url(#g4)"/>
+            <!-- Large build -->
+            <rect x="75" y="145" width="70" height="95" rx="5" fill="rgba(180,0,255,0.12)" stroke="#b400ff" stroke-width="1"/>
+            <!-- Massive shoulders -->
+            <ellipse cx="80" cy="148" rx="22" ry="18" fill="rgba(180,0,255,0.15)" stroke="#b400ff" stroke-width="1"/>
+            <ellipse cx="140" cy="148" rx="22" ry="18" fill="rgba(180,0,255,0.15)" stroke="#b400ff" stroke-width="1"/>
+            <!-- Head helmet -->
+            <rect x="88" y="100" width="44" height="48" rx="8" fill="rgba(180,0,255,0.2)" stroke="#b400ff" stroke-width="2"/>
+            <rect x="92" y="115" width="36" height="14" rx="2" fill="#b400ff" opacity="0.4"/>
+            <!-- Thick legs -->
+            <rect x="82" y="238" width="24" height="58" rx="4" fill="rgba(180,0,255,0.1)" stroke="#b400ff" stroke-width="0.5"/>
+            <rect x="114" y="238" width="24" height="58" rx="4" fill="rgba(180,0,255,0.1)" stroke="#b400ff" stroke-width="0.5"/>
+            <!-- Shield -->
+            <polygon points="48,140 70,130 70,210 48,200" fill="rgba(180,0,255,0.15)" stroke="#b400ff" stroke-width="2"/>
+            <circle cx="59" cy="170" r="8" fill="none" stroke="#b400ff" stroke-width="1.5"/>
+          </svg>
+        </div>
+      </div>
+      <div class="player-overlay" style="border-color:rgba(180,0,255,0.3);background:rgba(180,0,255,0.04)"></div>
+      <div class="player-card-bottom">
+        <div class="player-role role-jg">// JUNGLER</div>
+        <div class="player-name">Jungle NAME</div>
+        <div class="player-alias">Jungle alias</div>
+      </div>
+    </div>
+
+    <!-- Player 5 -->
+    <div class="player-card">
+      <div class="player-number">05</div>
+      <div class="player-bg">
+        <div class="player-silhouette">
+          <svg class="char-svg" viewBox="0 0 220 340" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <radialGradient id="g5" cx="50%" cy="80%" r="60%">
+                <stop offset="0%" stop-color="#00ff64" stop-opacity="0.3"/>
+                <stop offset="100%" stop-color="#00ff64" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+            <ellipse cx="110" cy="300" rx="70" ry="20" fill="url(#g5)"/>
+            <!-- Flowing nature elements -->
+            <ellipse cx="110" cy="135" rx="45" ry="35" fill="rgba(0,255,100,0.06)" stroke="#00ff64" stroke-width="0.5"/>
+            <!-- Body -->
+            <rect x="90" y="150" width="40" height="80" rx="5" fill="rgba(0,255,100,0.1)" stroke="#00ff64" stroke-width="1"/>
+            <!-- Head -->
+            <circle cx="110" cy="118" r="24" fill="rgba(0,255,100,0.15)" stroke="#00ff64" stroke-width="1.5"/>
+            <!-- Leaf crown -->
+            <polygon points="90,100 110,82 130,100" fill="rgba(0,255,100,0.3)" stroke="#00ff64" stroke-width="1"/>
+            <polygon points="98,104 110,88 122,104" fill="rgba(0,255,100,0.2)"/>
+            <!-- Eyes -->
+            <circle cx="102" cy="118" r="5" fill="#00ff64" opacity="0.7"/>
+            <circle cx="118" cy="118" r="5" fill="#00ff64" opacity="0.7"/>
+            <!-- Legs -->
+            <rect x="92" y="228" width="16" height="60" rx="3" fill="rgba(0,255,100,0.1)" stroke="#00ff64" stroke-width="0.5"/>
+            <rect x="112" y="228" width="16" height="60" rx="3" fill="rgba(0,255,100,0.1)" stroke="#00ff64" stroke-width="0.5"/>
+            <!-- Floating orbs -->
+            <circle cx="65" cy="180" r="6" fill="#00ff64" opacity="0.5"/>
+            <circle cx="155" cy="165" r="4" fill="#00ff64" opacity="0.4"/>
+            <circle cx="145" cy="200" r="7" fill="#00ff64" opacity="0.3"/>
+          </svg>
+        </div>
+      </div>
+      <div class="player-overlay" style="border-color:rgba(0,255,100,0.3);background:rgba(0,255,100,0.04)"></div>
+      <div class="player-card-bottom">
+        <div class="player-role role-roam">// ROAMER</div>
+        <div class="player-name">Roamer NAME</div>
+        <div class="player-alias">Roamer alias</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PLAYER SHOWCASE CAROUSEL -->
+<section id="showcase">
+  <div class="showcase-header reveal">
+    <span class="section-tag">// FULL SQUAD</span>
+    <h2 class="section-title">MEET THE <span>ROSTER</span></h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="carousel-stage" id="carouselStage">
+    <div class="spotlight-beam" id="spotlightBeam"></div>
+    <div class="showcase-floor" id="showcaseFloor"></div>
+    <div class="stage-scanline"></div>
+    <div class="carousel-mask-left"></div>
+    <div class="carousel-mask-right"></div>
+    <div class="carousel-track" id="carouselTrack">
+      <!-- Slides injected by JS -->
+    </div>
+    <div class="carousel-nav">
+      <button class="carr-btn" id="prevBtn">&#8592;</button>
+      <div class="carousel-dots" id="carouselDots"></div>
+      <button class="carr-btn" id="nextBtn">&#8594;</button>
+    </div>
+  </div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section id="achievements" style="max-width:100%;padding:100px 0;background:linear-gradient(180deg,transparent,rgba(255,0,51,0.02),transparent);">
+  <div style="max-width:1300px;margin:0 auto;padding:0 40px;">
+    <div class="section-header reveal">
+      <span class="section-tag">// HALL OF GLORY</span>
+      <h2 class="section-title">TROPHY <span>CASE</span></h2>
+      <div class="section-line" style="background:linear-gradient(to right,var(--neon-gold),transparent)"></div>
+    </div>
+
+    <div class="achievements-grid">
+      <div class="achievement-list reveal">
+        <div class="achievement-item">
+          <div class="achievement-icon">🏆</div>
+          <div class="achievement-text">
+            <h3>MPL World Champions</h3>
+            <p>M5 World Championship · Jakarta</p>
+          </div>
+          <div class="achievement-year">2024</div>
+        </div>
+        <div class="achievement-item">
+          <div class="achievement-icon">🥇</div>
+          <div class="achievement-text">
+            <h3>MPL Season 13 Champions</h3>
+            <p>Mobile Legends Pro League · SEA</p>
+          </div>
+          <div class="achievement-year">2024</div>
+        </div>
+        <div class="achievement-item">
+          <div class="achievement-icon">⚡</div>
+          <div class="achievement-text">
+            <h3>MSC Grand Finals MVP</h3>
+            <p>KIRA — Most Valuable Player</p>
+          </div>
+          <div class="achievement-year">2023</div>
+        </div>
+        <div class="achievement-item">
+          <div class="achievement-icon">🎯</div>
+          <div class="achievement-text">
+            <h3>Highest KDA World Record</h3>
+            <p>DRAVOX — Season aggregate 12.4</p>
+          </div>
+          <div class="achievement-year">2023</div>
+        </div>
+        <div class="achievement-item">
+          <div class="achievement-icon">🌐</div>
+          <div class="achievement-text">
+            <h3>MPL International Cup</h3>
+            <p>Champions — 3 consecutive seasons</p>
+          </div>
+          <div class="achievement-year">2022–24</div>
+        </div>
+        <div class="achievement-item">
+          <div class="achievement-icon">💎</div>
+          <div class="achievement-text">
+            <h3>Best Team of the Year</h3>
+            <p>MLBB Esports Awards — Global</p>
+          </div>
+          <div class="achievement-year">2024</div>
+        </div>
+      </div>
+
+      <!-- Trophy SVG -->
+      <div class="trophy-display reveal">
+        <div class="trophy-svg-wrap">
+          <svg viewBox="0 0 320 400" width="320" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <radialGradient id="tg" cx="50%" cy="40%" r="60%">
+                <stop offset="0%" stop-color="#ffd700" stop-opacity="0.3"/>
+                <stop offset="100%" stop-color="#ffd700" stop-opacity="0"/>
+              </radialGradient>
+              <filter id="tglow">
+                <feGaussianBlur stdDeviation="6" result="b"/>
+                <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+              </filter>
+            </defs>
+            <ellipse cx="160" cy="320" rx="100" ry="30" fill="url(#tg)"/>
+            <!-- Base -->
+            <rect x="110" y="300" width="100" height="20" rx="4" fill="rgba(255,215,0,0.1)" stroke="#ffd700" stroke-width="1.5"/>
+            <rect x="120" y="280" width="80" height="25" rx="3" fill="rgba(255,215,0,0.08)" stroke="#ffd700" stroke-width="1"/>
+            <!-- Stem -->
+            <rect x="148" y="215" width="24" height="68" rx="3" fill="rgba(255,215,0,0.1)" stroke="#ffd700" stroke-width="1"/>
+            <!-- Cup body -->
+            <path d="M100 210 Q100 60 160 40 Q220 60 220 210 Z" fill="rgba(255,215,0,0.08)" stroke="#ffd700" stroke-width="2" filter="url(#tglow)"/>
+            <!-- Cup inner shine -->
+            <path d="M120 200 Q120 90 160 75 Q170 90 170 200 Z" fill="rgba(255,215,0,0.05)"/>
+            <!-- Handles -->
+            <path d="M100 150 Q60 150 60 170 Q60 190 100 185" fill="none" stroke="#ffd700" stroke-width="2"/>
+            <path d="M220 150 Q260 150 260 170 Q260 190 220 185" fill="none" stroke="#ffd700" stroke-width="2"/>
+            <!-- Star on cup -->
+            <polygon points="160,90 168,112 192,112 173,126 180,148 160,134 140,148 147,126 128,112 152,112" fill="#ffd700" opacity="0.7" filter="url(#tglow)"/>
+            <!-- Glow rings -->
+            <circle cx="160" cy="155" r="50" fill="none" stroke="#ffd700" stroke-width="0.5" opacity="0.3"/>
+            <circle cx="160" cy="155" r="70" fill="none" stroke="#ffd700" stroke-width="0.5" opacity="0.15"/>
+            <!-- "YOUR TEAM" text on cup -->
+            <text x="160" y="185" text-anchor="middle" font-family="Orbitron,sans-serif" font-size="9" font-weight="700" fill="#ffd700" opacity="0.6" letter-spacing="2">YOUR TEAM</text>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MATCHES -->
+<section id="matches">
+  <div class="section-header reveal">
+    <span class="section-tag">// RECENT RESULTS</span>
+    <h2 class="section-title">BATTLE <span>LOG</span></h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="matches-list reveal">
+    <div class="match-item">
+      <div class="match-team">
+        <div class="team-logo-sm our-team">PRT</div>
+        <div>
+          <div class="team-name-sm">YOUR TEAM</div>
+        </div>
+      </div>
+      <div class="match-score">
+        <div class="score-num"><span class="score-win">3</span><span class="score-sep">—</span><span class="score-lose">1</span></div>
+        <div class="match-date">APR 18, 2026</div>
+      </div>
+      <div class="match-team right">
+        <div class="team-logo-sm opp-team">SRK</div>
+        <div>
+          <div class="team-name-sm">STAR REAPERS</div>
+        </div>
+      </div>
+      <div class="match-tournament">
+        <span>MPL SEASON 15</span><br>
+        <span class="win-badge">WIN</span>
+      </div>
+    </div>
+
+    <div class="match-item">
+      <div class="match-team">
+        <div class="team-logo-sm our-team">PRT</div>
+        <div>
+          <div class="team-name-sm">YOUR TEAM</div>
+        </div>
+      </div>
+      <div class="match-score">
+        <div class="score-num"><span class="score-win">3</span><span class="score-sep">—</span><span class="score-lose">0</span></div>
+        <div class="match-date">APR 14, 2026</div>
+      </div>
+      <div class="match-team right">
+        <div class="team-logo-sm opp-team">NVX</div>
+        <div>
+          <div class="team-name-sm">NOVEX TITAN</div>
+        </div>
+      </div>
+      <div class="match-tournament">
+        <span>MPL SEASON 15</span><br>
+        <span class="win-badge">WIN</span>
+      </div>
+    </div>
+
+    <div class="match-item">
+      <div class="match-team">
+        <div class="team-logo-sm our-team">PRT</div>
+        <div>
+          <div class="team-name-sm">YOUR TEAM</div>
+        </div>
+      </div>
+      <div class="match-score">
+        <div class="score-num"><span class="score-lose">1</span><span class="score-sep">—</span><span class="score-win">3</span></div>
+        <div class="match-date">APR 10, 2026</div>
+      </div>
+      <div class="match-team right">
+        <div class="team-logo-sm opp-team">EXO</div>
+        <div>
+          <div class="team-name-sm">EXODUS PRIME</div>
+        </div>
+      </div>
+      <div class="match-tournament">
+        <span>MSC GROUP STAGE</span><br>
+        <span class="loss-badge">LOSS</span>
+      </div>
+    </div>
+
+    <div class="match-item">
+      <div class="match-team">
+        <div class="team-logo-sm our-team">PRT</div>
+        <div>
+          <div class="team-name-sm">YOUR TEAM</div>
+        </div>
+      </div>
+      <div class="match-score">
+        <div class="score-num"><span class="score-win">3</span><span class="score-sep">—</span><span class="score-lose">2</span></div>
+        <div class="match-date">APR 06, 2026</div>
+      </div>
+      <div class="match-team right">
+        <div class="team-logo-sm opp-team">VLD</div>
+        <div>
+          <div class="team-name-sm">VALDREX</div>
+        </div>
+      </div>
+      <div class="match-tournament">
+        <span>MSC GROUP STAGE</span><br>
+        <span class="win-badge">WIN</span>
+      </div>
+    </div>
+
+    <div class="match-item">
+      <div class="match-team">
+        <div class="team-logo-sm our-team">PRT</div>
+        <div>
+          <div class="team-name-sm">YOUR TEAM</div>
+        </div>
+      </div>
+      <div class="match-score">
+        <div class="score-num"><span class="score-win">3</span><span class="score-sep">—</span><span class="score-lose">0</span></div>
+        <div class="match-date">MAR 29, 2026</div>
+      </div>
+      <div class="match-team right">
+        <div class="team-logo-sm opp-team">ZRN</div>
+        <div>
+          <div class="team-name-sm">ZERO REIGN</div>
+        </div>
+      </div>
+      <div class="match-tournament">
+        <span>MPL SEASON 15</span><br>
+        <span class="win-badge">WIN</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SPONSORS -->
+<div id="sponsors" style="border-top:1px solid rgba(255,255,255,0.04);border-bottom:1px solid rgba(255,255,255,0.04);background:rgba(255,255,255,0.01);padding:60px 40px;position:relative;z-index:1;">
+  <div class="sponsors-inner">
+    <p class="sponsors-label">POWERED BY OUR SPONSORS</p>
+    <div class="sponsors-track">
+      <div class="sponsors-scroll">
+        <div class="sponsor-logo">SPONSOR 1</div>
+        <div class="sponsor-logo">SPONSOR 2</div>
+        <div class="sponsor-logo">SPONSOR 3</div>
+        <div class="sponsor-logo">SPONSOR 4</div>
+        <div class="sponsor-logo">SPONSOR 5</div>
+        <div class="sponsor-logo">SPONSOR 6</div>
+        <div class="sponsor-logo">SPONSOR 7</div>
+        <div class="sponsor-logo">SPONSOR 8</div>
+        <!-- Duplicate for seamless loop -->
+        <div class="sponsor-logo">SPONSOR 1</div>
+        <div class="sponsor-logo">SPONSOR 2</div>
+        <div class="sponsor-logo">SPONSOR 3</div>
+        <div class="sponsor-logo">SPONSOR 4</div>
+        <div class="sponsor-logo">SPONSOR 5</div>
+        <div class="sponsor-logo">SPONSOR 6</div>
+        <div class="sponsor-logo">SPONSOR 7</div>
+        <div class="sponsor-logo">SPONSOR 8</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="brand-name">YOUR<span>TEAM</span></span>
+      <p>Elite Mobile Legends esports organization forged from the shadows. We don't just play — we dominate. Season 5 world contenders.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <ul>
+        <li><a href="#roster">Roster</a></li>
+        <li><a href="#achievements">Trophies</a></li>
+        <li><a href="#matches">Matches</a></li>
+        <li><a href="#sponsors">Sponsors</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Connect</h4>
+      <ul>
+        <li><a href="#">YouTube</a></li>
+        <li><a href="#">Twitch</a></li>
+        <li><a href="#">Twitter / X</a></li>
+        <li><a href="#">TikTok</a></li>
+        <li><a href="#">Discord</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 YOUR TEAM ESPORTS · DEMO FOR PORTFOLIO USE</p>
+    <div class="social-links">
+      <a href="#" class="social-link">YT</a>
+      <a href="#" class="social-link">TW</a>
+      <a href="#" class="social-link">DC</a>
+      <a href="#" class="social-link">TK</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Cursor trail
+const trail = document.getElementById('cursor-trail');
+document.addEventListener('mousemove', e => {
+  trail.style.left = e.clientX + 'px';
+  trail.style.top = e.clientY + 'px';
+});
+
+// Hex canvas animation
+const canvas = document.getElementById('hex-canvas');
+const ctx = canvas.getContext('2d');
+
+function resize() {
+  canvas.width = canvas.offsetWidth;
+  canvas.height = canvas.offsetHeight;
+}
+resize();
+window.addEventListener('resize', resize);
+
+const hexes = [];
+const HEX_SIZE = 40;
+const cols = Math.ceil(canvas.width / (HEX_SIZE * 1.8)) + 2;
+const rows = Math.ceil(canvas.height / (HEX_SIZE * 1.6)) + 2;
+
+for (let r = 0; r < rows; r++) {
+  for (let c = 0; c < cols; c++) {
+    const x = c * HEX_SIZE * 1.75 + (r % 2 ? HEX_SIZE * 0.875 : 0);
+    const y = r * HEX_SIZE * 1.5;
+    hexes.push({
+      x, y,
+      alpha: Math.random() * 0.06,
+      targetAlpha: Math.random() * 0.08,
+      speed: 0.002 + Math.random() * 0.005
+    });
+  }
+}
+
+function hexPath(x, y, s) {
+  ctx.beginPath();
+  for (let i = 0; i < 6; i++) {
+    const a = Math.PI / 180 * (60 * i - 30);
+    i === 0 ? ctx.moveTo(x + s * Math.cos(a), y + s * Math.sin(a))
+             : ctx.lineTo(x + s * Math.cos(a), y + s * Math.sin(a));
+  }
+  ctx.closePath();
+}
+
+function animateHex() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  hexes.forEach(h => {
+    if (Math.abs(h.alpha - h.targetAlpha) < 0.001) {
+      h.targetAlpha = Math.random() * 0.08;
+    }
+    h.alpha += (h.targetAlpha - h.alpha) * h.speed;
+    hexPath(h.x, h.y, HEX_SIZE - 2);
+    ctx.strokeStyle = `rgba(0,245,255,${h.alpha})`;
+    ctx.lineWidth = 0.5;
+    ctx.stroke();
+  });
+  requestAnimationFrame(animateHex);
+}
+animateHex();
+
+// Scroll reveal
+const reveals = document.querySelectorAll('.reveal');
+const observer = new IntersectionObserver(entries => {
+  entries.forEach((e, i) => {
+    if (e.isIntersecting) {
+      setTimeout(() => e.target.classList.add('visible'), i * 80);
+    }
+  });
+}, { threshold: 0.1 });
+reveals.forEach(el => observer.observe(el));
+
+// Counter animation
+function animateCounter(el, target, duration = 1800) {
+  const hasPercent = el.innerHTML.includes('%');
+  let start = null;
+  const step = ts => {
+    if (!start) start = ts;
+    const progress = Math.min((ts - start) / duration, 1);
+    const ease = 1 - Math.pow(1 - progress, 3);
+    const current = Math.floor(ease * target);
+    el.innerHTML = current + (hasPercent ? '<span style="font-size:20px">%</span>' : '');
+    if (progress < 1) requestAnimationFrame(step);
+  };
+  requestAnimationFrame(step);
+}
+
+const statNums = document.querySelectorAll('.stat-num[data-count]');
+const statObs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      animateCounter(e.target, parseInt(e.target.dataset.count));
+      statObs.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.5 });
+statNums.forEach(el => statObs.observe(el));
+
+// Player card hover — red glow for card 2, etc.
+document.querySelectorAll('.player-card').forEach((card, i) => {
+  const colors = ['#00f5ff','#ff0033','#ffd700','#b400ff','#00ff64'];
+  card.addEventListener('mouseenter', () => {
+    card.style.boxShadow = `0 20px 60px ${colors[i]}22, 0 0 30px ${colors[i]}11`;
+  });
+  card.addEventListener('mouseleave', () => {
+    card.style.boxShadow = '';
+  });
+});
+
+// =====================================================
+// PLAYER SHOWCASE CAROUSEL
+// =====================================================
+const SQUAD = [
+  {
+    id: 1, name: 'MM Name', alias: 'MM alias', role: 'MARKSMAN', tag: 'MM',
+    color: '#00f5ff',
+    svg: `<svg viewBox="0 0 280 480" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <radialGradient id="cg1" cx="50%" cy="90%" r="50%">
+          <stop offset="0%" stop-color="#00f5ff" stop-opacity="0.35"/>
+          <stop offset="100%" stop-color="#00f5ff" stop-opacity="0"/>
+        </radialGradient>
+        <filter id="cf1"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+      </defs>
+      <ellipse cx="140" cy="460" rx="90" ry="18" fill="url(#cg1)"/>
+      <!-- Legs -->
+      <rect x="112" y="330" width="22" height="110" rx="5" fill="rgba(0,245,255,0.12)" stroke="#00f5ff" stroke-width="1"/>
+      <rect x="146" y="330" width="22" height="110" rx="5" fill="rgba(0,245,255,0.12)" stroke="#00f5ff" stroke-width="1"/>
+      <!-- Boots -->
+      <rect x="108" y="418" width="30" height="22" rx="4" fill="rgba(0,245,255,0.22)" stroke="#00f5ff" stroke-width="1.5"/>
+      <rect x="142" y="418" width="30" height="22" rx="4" fill="rgba(0,245,255,0.22)" stroke="#00f5ff" stroke-width="1.5"/>
+      <!-- Torso -->
+      <rect x="100" y="210" width="80" height="125" rx="8" fill="rgba(0,245,255,0.14)" stroke="#00f5ff" stroke-width="1.5"/>
+      <!-- Chest plate details -->
+      <rect x="112" y="225" width="56" height="30" rx="3" fill="rgba(0,245,255,0.1)" stroke="#00f5ff" stroke-width="0.7"/>
+      <line x1="140" y1="225" x2="140" y2="255" stroke="#00f5ff" stroke-width="0.5" opacity="0.5"/>
+      <rect x="120" y="270" width="40" height="6" rx="2" fill="rgba(0,245,255,0.2)"/>
+      <!-- Left arm — raised with gun -->
+      <rect x="58" y="208" width="44" height="20" rx="5" fill="rgba(0,245,255,0.14)" stroke="#00f5ff" stroke-width="1" transform="rotate(-18,80,218)"/>
+      <!-- Right arm — bracing -->
+      <rect x="178" y="215" width="36" height="18" rx="5" fill="rgba(0,245,255,0.14)" stroke="#00f5ff" stroke-width="1" transform="rotate(10,196,224)"/>
+      <!-- Gun barrel -->
+      <rect x="20" y="200" width="72" height="10" rx="2" fill="rgba(0,245,255,0.2)" stroke="#00f5ff" stroke-width="1.5" filter="url(#cf1)"/>
+      <!-- Muzzle flash -->
+      <polygon points="20,194 2,205 20,216" fill="#00f5ff" opacity="0.7" filter="url(#cf1)"/>
+      <polygon points="20,198 8,205 20,212" fill="#ffffff" opacity="0.5"/>
+      <!-- Shoulder pads -->
+      <ellipse cx="100" cy="214" rx="18" ry="14" fill="rgba(0,245,255,0.2)" stroke="#00f5ff" stroke-width="1.5"/>
+      <ellipse cx="180" cy="214" rx="18" ry="14" fill="rgba(0,245,255,0.2)" stroke="#00f5ff" stroke-width="1.5"/>
+      <!-- Neck -->
+      <rect x="128" y="180" width="24" height="34" rx="4" fill="rgba(0,245,255,0.1)" stroke="#00f5ff" stroke-width="0.8"/>
+      <!-- Head — helmet -->
+      <rect x="105" y="120" width="70" height="68" rx="12" fill="rgba(0,245,255,0.18)" stroke="#00f5ff" stroke-width="2"/>
+      <!-- Visor -->
+      <rect x="110" y="138" width="60" height="22" rx="4" fill="#00f5ff" opacity="0.55" filter="url(#cf1)"/>
+      <!-- Visor inner glow lines -->
+      <line x1="115" y1="145" x2="165" y2="145" stroke="#ffffff" stroke-width="0.8" opacity="0.4"/>
+      <line x1="115" y1="152" x2="165" y2="152" stroke="#ffffff" stroke-width="0.5" opacity="0.25"/>
+      <!-- Antenna -->
+      <line x1="155" y1="120" x2="165" y2="90" stroke="#00f5ff" stroke-width="1.5"/>
+      <circle cx="166" cy="88" r="4" fill="#00f5ff" filter="url(#cf1)"/>
+      <!-- Energy line down spine -->
+      <line x1="140" y1="185" x2="140" y2="335" stroke="#00f5ff" stroke-width="0.5" stroke-dasharray="5,8" opacity="0.3"/>
+      <!-- Floating scan dots -->
+      <circle cx="76" cy="170" r="3" fill="#00f5ff" opacity="0.5" filter="url(#cf1)"/>
+      <circle cx="200" cy="195" r="2.5" fill="#00f5ff" opacity="0.4"/>
+      <circle cx="210" cy="280" r="2" fill="#00f5ff" opacity="0.35"/>
+    </svg>`
+  },
+  {
+    id: 2, name: 'EXP Name', alias: 'EXP alias', role: 'EXP LANE', tag: 'EXP',
+    color: '#ff0033',
+    svg: `<svg viewBox="0 0 280 480" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <radialGradient id="cg2" cx="50%" cy="90%" r="50%">
+          <stop offset="0%" stop-color="#ff0033" stop-opacity="0.35"/>
+          <stop offset="100%" stop-color="#ff0033" stop-opacity="0"/>
+        </radialGradient>
+        <filter id="cf2"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+      </defs>
+      <ellipse cx="140" cy="460" rx="90" ry="18" fill="url(#cg2)"/>
+      <!-- Long coat/cape bottom -->
+      <polygon points="80,240 200,240 220,440 60,440" fill="rgba(255,0,51,0.07)" stroke="#ff0033" stroke-width="0.8"/>
+      <!-- Legs -->
+      <rect x="108" y="340" width="20" height="100" rx="4" fill="rgba(255,0,51,0.15)" stroke="#ff0033" stroke-width="1"/>
+      <rect x="152" y="340" width="20" height="100" rx="4" fill="rgba(255,0,51,0.15)" stroke="#ff0033" stroke-width="1"/>
+      <!-- Armored boots -->
+      <polygon points="102,430 134,430 138,450 98,450" fill="rgba(255,0,51,0.25)" stroke="#ff0033" stroke-width="1.5"/>
+      <polygon points="146,430 178,430 182,450 142,450" fill="rgba(255,0,51,0.25)" stroke="#ff0033" stroke-width="1.5"/>
+      <!-- Torso — broad armor -->
+      <polygon points="95,190 185,190 195,340 85,340" fill="rgba(255,0,51,0.12)" stroke="#ff0033" stroke-width="1.5"/>
+      <!-- Chest V-plate -->
+      <polygon points="120,195 160,195 150,270 130,270" fill="rgba(255,0,51,0.18)" stroke="#ff0033" stroke-width="1"/>
+      <!-- Left arm -->
+      <rect x="55" y="195" width="40" height="22" rx="6" fill="rgba(255,0,51,0.15)" stroke="#ff0033" stroke-width="1.2" transform="rotate(-20,75,206)"/>
+      <!-- Right arm — sword hand raised -->
+      <rect x="185" y="180" width="40" height="22" rx="6" fill="rgba(255,0,51,0.15)" stroke="#ff0033" stroke-width="1.2" transform="rotate(35,205,191)"/>
+      <!-- Shoulder spikes -->
+      <polygon points="90,192 70,172 96,185" fill="rgba(255,0,51,0.3)" stroke="#ff0033" stroke-width="1"/>
+      <polygon points="190,192 210,172 184,185" fill="rgba(255,0,51,0.3)" stroke="#ff0033" stroke-width="1"/>
+      <!-- Sword blade — diagonal -->
+      <polygon points="210,80 222,88 192,320 178,308" fill="rgba(255,0,51,0.2)" stroke="#ff0033" stroke-width="1.5" filter="url(#cf2)"/>
+      <!-- Sword crossguard -->
+      <rect x="172" y="170" width="44" height="10" rx="2" fill="#ff0033" opacity="0.7" filter="url(#cf2)"/>
+      <!-- Sword edge glow -->
+      <line x1="216" y1="82" x2="185" y2="315" stroke="#ff0033" stroke-width="2" opacity="0.8" filter="url(#cf2)"/>
+      <!-- Neck -->
+      <rect x="128" y="165" width="24" height="30" rx="4" fill="rgba(255,0,51,0.12)"/>
+      <!-- Head — angular helmet -->
+      <polygon points="140,90 175,115 170,178 110,178 105,115" fill="rgba(255,0,51,0.18)" stroke="#ff0033" stroke-width="2"/>
+      <!-- Face slit -->
+      <rect x="112" y="132" width="56" height="18" rx="2" fill="rgba(0,0,0,0.7)" stroke="#ff0033" stroke-width="0.8"/>
+      <!-- Eyes glow red -->
+      <circle cx="126" cy="141" r="6" fill="#ff0033" opacity="0.9" filter="url(#cf2)"/>
+      <circle cx="154" cy="141" r="6" fill="#ff0033" opacity="0.9" filter="url(#cf2)"/>
+      <!-- Crest on top -->
+      <polygon points="140,90 132,60 140,72 148,60" fill="#ff0033" opacity="0.6" filter="url(#cf2)"/>
+      <!-- Battle particles -->
+      <circle cx="62" cy="260" r="3" fill="#ff0033" opacity="0.5"/>
+      <circle cx="230" cy="220" r="2" fill="#ff0033" opacity="0.4"/>
+      <circle cx="55" cy="310" r="2.5" fill="#ff0033" opacity="0.35"/>
+    </svg>`
+  },
+  {
+    id: 3, name: 'MID Name', alias: 'MID alias', role: 'MID LANE', tag: 'MID',
+    color: '#ffd700',
+    svg: `<svg viewBox="0 0 280 480" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <radialGradient id="cg3" cx="50%" cy="90%" r="50%">
+          <stop offset="0%" stop-color="#ffd700" stop-opacity="0.35"/>
+          <stop offset="100%" stop-color="#ffd700" stop-opacity="0"/>
+        </radialGradient>
+        <filter id="cf3"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+      </defs>
+      <ellipse cx="140" cy="460" rx="90" ry="18" fill="url(#cg3)"/>
+      <!-- Flowing robe -->
+      <polygon points="88,200 192,200 215,448 65,448" fill="rgba(255,215,0,0.06)" stroke="#ffd700" stroke-width="0.8"/>
+      <!-- Robe layered detail -->
+      <polygon points="100,200 180,200 198,370 82,370" fill="rgba(255,215,0,0.04)" stroke="#ffd700" stroke-width="0.5"/>
+      <!-- Inner garment -->
+      <rect x="112" y="205" width="56" height="140" rx="5" fill="rgba(255,215,0,0.1)" stroke="#ffd700" stroke-width="1"/>
+      <!-- Belt -->
+      <rect x="106" y="310" width="68" height="14" rx="3" fill="rgba(255,215,0,0.2)" stroke="#ffd700" stroke-width="1"/>
+      <circle cx="140" cy="317" r="7" fill="rgba(255,215,0,0.25)" stroke="#ffd700" stroke-width="1"/>
+      <!-- Left arm reaching forward -->
+      <rect x="55" y="200" width="56" height="18" rx="6" fill="rgba(255,215,0,0.12)" stroke="#ffd700" stroke-width="1" transform="rotate(-25,83,209)"/>
+      <!-- Right arm down -->
+      <rect x="170" y="205" width="40" height="18" rx="6" fill="rgba(255,215,0,0.12)" stroke="#ffd700" stroke-width="1" transform="rotate(12,190,214)"/>
+      <!-- Staff — held left -->
+      <line x1="52" y1="80" x2="68" y2="380" stroke="#ffd700" stroke-width="2.5"/>
+      <!-- Staff orb top -->
+      <circle cx="54" cy="76" r="20" fill="none" stroke="#ffd700" stroke-width="2"/>
+      <circle cx="54" cy="76" r="12" fill="rgba(255,215,0,0.15)" stroke="#ffd700" stroke-width="1"/>
+      <circle cx="54" cy="76" r="6" fill="#ffd700" opacity="0.8" filter="url(#cf3)"/>
+      <!-- Magic rings around orb -->
+      <ellipse cx="54" cy="76" rx="28" ry="8" fill="none" stroke="#ffd700" stroke-width="0.8" opacity="0.4" transform="rotate(30,54,76)"/>
+      <ellipse cx="54" cy="76" rx="28" ry="8" fill="none" stroke="#ffd700" stroke-width="0.8" opacity="0.3" transform="rotate(-30,54,76)"/>
+      <!-- Shoulder cape -->
+      <path d="M112,200 Q80,215 60,240 Q70,235 112,225" fill="rgba(255,215,0,0.1)" stroke="#ffd700" stroke-width="0.8"/>
+      <path d="M168,200 Q200,215 220,240 Q210,235 168,225" fill="rgba(255,215,0,0.1)" stroke="#ffd700" stroke-width="0.8"/>
+      <!-- Neck -->
+      <rect x="128" y="172" width="24" height="32" rx="4" fill="rgba(255,215,0,0.1)"/>
+      <!-- Head -->
+      <ellipse cx="140" cy="148" rx="32" ry="30" fill="rgba(255,215,0,0.16)" stroke="#ffd700" stroke-width="1.8"/>
+      <!-- Pointed wizard hat -->
+      <polygon points="140,56 112,148 168,148" fill="rgba(255,215,0,0.15)" stroke="#ffd700" stroke-width="2"/>
+      <rect x="108" y="144" width="64" height="12" rx="2" fill="rgba(255,215,0,0.25)" stroke="#ffd700" stroke-width="1"/>
+      <!-- Hat star -->
+      <polygon points="140,72 144,84 158,84 147,91 151,105 140,97 129,105 133,91 122,84 136,84" fill="#ffd700" opacity="0.6" filter="url(#cf3)"/>
+      <!-- Eyes -->
+      <ellipse cx="130" cy="152" rx="7" ry="5" fill="#ffd700" opacity="0.75" filter="url(#cf3)"/>
+      <ellipse cx="150" cy="152" rx="7" ry="5" fill="#ffd700" opacity="0.75" filter="url(#cf3)"/>
+      <!-- Floating magic particles -->
+      <circle cx="220" cy="150" r="5" fill="#ffd700" opacity="0.6" filter="url(#cf3)"/>
+      <circle cx="235" cy="200" r="3.5" fill="#ffd700" opacity="0.45"/>
+      <circle cx="225" cy="260" r="4" fill="#ffd700" opacity="0.35"/>
+      <circle cx="240" cy="310" r="2.5" fill="#ffd700" opacity="0.3"/>
+    </svg>`
+  },
+  {
+    id: 4, name: 'JG Name', alias: 'JG alias', role: 'JUNGLER', tag: 'JG',
+    color: '#b400ff',
+    svg: `<svg viewBox="0 0 280 480" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <radialGradient id="cg4" cx="50%" cy="90%" r="50%">
+          <stop offset="0%" stop-color="#b400ff" stop-opacity="0.35"/>
+          <stop offset="100%" stop-color="#b400ff" stop-opacity="0"/>
+        </radialGradient>
+        <filter id="cf4"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+      </defs>
+      <ellipse cx="140" cy="460" rx="90" ry="18" fill="url(#cg4)"/>
+      <!-- Thick legs -->
+      <rect x="100" y="320" width="30" height="120" rx="6" fill="rgba(180,0,255,0.15)" stroke="#b400ff" stroke-width="1.5"/>
+      <rect x="150" y="320" width="30" height="120" rx="6" fill="rgba(180,0,255,0.15)" stroke="#b400ff" stroke-width="1.5"/>
+      <!-- Heavy boots -->
+      <rect x="95" y="418" width="42" height="24" rx="5" fill="rgba(180,0,255,0.25)" stroke="#b400ff" stroke-width="2"/>
+      <rect x="143" y="418" width="42" height="24" rx="5" fill="rgba(180,0,255,0.25)" stroke="#b400ff" stroke-width="2"/>
+      <!-- Torso — large armor -->
+      <rect x="88" y="190" width="104" height="136" rx="8" fill="rgba(180,0,255,0.14)" stroke="#b400ff" stroke-width="2"/>
+      <!-- Chest armor plates -->
+      <polygon points="108,200 172,200 178,280 102,280" fill="rgba(180,0,255,0.12)" stroke="#b400ff" stroke-width="1"/>
+      <rect x="124" y="210" width="32" height="50" rx="4" fill="rgba(180,0,255,0.2)" stroke="#b400ff" stroke-width="0.8"/>
+      <!-- Core energy orb in chest -->
+      <circle cx="140" cy="248" r="14" fill="rgba(180,0,255,0.15)" stroke="#b400ff" stroke-width="1.5"/>
+      <circle cx="140" cy="248" r="7" fill="#b400ff" opacity="0.6" filter="url(#cf4)"/>
+      <!-- Massive shoulders -->
+      <ellipse cx="92" cy="196" rx="28" ry="24" fill="rgba(180,0,255,0.2)" stroke="#b400ff" stroke-width="2"/>
+      <ellipse cx="188" cy="196" rx="28" ry="24" fill="rgba(180,0,255,0.2)" stroke="#b400ff" stroke-width="2"/>
+      <!-- Shoulder spikes -->
+      <polygon points="72,178 60,155 88,172" fill="rgba(180,0,255,0.35)" stroke="#b400ff" stroke-width="1"/>
+      <polygon points="208,178 220,155 192,172" fill="rgba(180,0,255,0.35)" stroke="#b400ff" stroke-width="1"/>
+      <!-- Arms — massive gauntlets -->
+      <rect x="44" y="200" width="48" height="26" rx="8" fill="rgba(180,0,255,0.18)" stroke="#b400ff" stroke-width="1.5"/>
+      <rect x="188" y="200" width="48" height="26" rx="8" fill="rgba(180,0,255,0.18)" stroke="#b400ff" stroke-width="1.5"/>
+      <!-- Gauntlet claws -->
+      <line x1="44" y1="208" x2="28" y2="228" stroke="#b400ff" stroke-width="2"/>
+      <line x1="44" y1="213" x2="26" y2="236" stroke="#b400ff" stroke-width="2"/>
+      <line x1="44" y1="220" x2="30" y2="245" stroke="#b400ff" stroke-width="2"/>
+      <!-- Neck wide -->
+      <rect x="124" y="162" width="32" height="32" rx="5" fill="rgba(180,0,255,0.15)"/>
+      <!-- Head — massive helmet -->
+      <rect x="96" y="95" width="88" height="72" rx="14" fill="rgba(180,0,255,0.2)" stroke="#b400ff" stroke-width="2.5"/>
+      <!-- Helmet visor — glowing slit -->
+      <rect x="102" y="120" width="76" height="20" rx="3" fill="rgba(180,0,255,0.3)" stroke="#b400ff" stroke-width="1"/>
+      <rect x="106" y="123" width="68" height="14" rx="2" fill="#b400ff" opacity="0.5" filter="url(#cf4)"/>
+      <!-- Helmet top fin -->
+      <polygon points="140,95 126,68 154,68" fill="rgba(180,0,255,0.3)" stroke="#b400ff" stroke-width="1.5"/>
+      <!-- Side vents -->
+      <rect x="97" y="108" width="10" height="30" rx="2" fill="rgba(180,0,255,0.15)" stroke="#b400ff" stroke-width="0.8"/>
+      <rect x="173" y="108" width="10" height="30" rx="2" fill="rgba(180,0,255,0.15)" stroke="#b400ff" stroke-width="0.8"/>
+      <!-- Energy aura particles -->
+      <circle cx="50" cy="290" r="5" fill="#b400ff" opacity="0.5" filter="url(#cf4)"/>
+      <circle cx="230" cy="260" r="4" fill="#b400ff" opacity="0.45"/>
+      <circle cx="235" cy="330" r="3" fill="#b400ff" opacity="0.35"/>
+      <circle cx="42" cy="350" r="3.5" fill="#b400ff" opacity="0.3"/>
+    </svg>`
+  },
+  {
+    id: 5, name: 'ROAM Name', alias: 'ROAM alias', role: 'ROAMER', tag: 'ROAM',
+    color: '#00ff64',
+    svg: `<svg viewBox="0 0 280 480" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <radialGradient id="cg5" cx="50%" cy="90%" r="50%">
+          <stop offset="0%" stop-color="#00ff64" stop-opacity="0.35"/>
+          <stop offset="100%" stop-color="#00ff64" stop-opacity="0"/>
+        </radialGradient>
+        <filter id="cf5"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+      </defs>
+      <ellipse cx="140" cy="460" rx="90" ry="18" fill="url(#cg5)"/>
+      <!-- Nature legs — vine-like -->
+      <rect x="114" y="330" width="18" height="110" rx="9" fill="rgba(0,255,100,0.12)" stroke="#00ff64" stroke-width="1"/>
+      <rect x="148" y="330" width="18" height="110" rx="9" fill="rgba(0,255,100,0.12)" stroke="#00ff64" stroke-width="1"/>
+      <!-- Root feet -->
+      <ellipse cx="123" cy="440" rx="22" ry="10" fill="rgba(0,255,100,0.15)" stroke="#00ff64" stroke-width="1.2"/>
+      <ellipse cx="157" cy="440" rx="22" ry="10" fill="rgba(0,255,100,0.15)" stroke="#00ff64" stroke-width="1.2"/>
+      <!-- Torso — flowing -->
+      <ellipse cx="140" cy="255" rx="52" ry="78" fill="rgba(0,255,100,0.1)" stroke="#00ff64" stroke-width="1.5"/>
+      <!-- Leaf armor plates -->
+      <ellipse cx="118" cy="230" rx="20" ry="28" fill="rgba(0,255,100,0.12)" stroke="#00ff64" stroke-width="1" transform="rotate(-15,118,230)"/>
+      <ellipse cx="162" cy="230" rx="20" ry="28" fill="rgba(0,255,100,0.12)" stroke="#00ff64" stroke-width="1" transform="rotate(15,162,230)"/>
+      <!-- Center leaf detail -->
+      <ellipse cx="140" cy="250" rx="16" ry="24" fill="rgba(0,255,100,0.18)" stroke="#00ff64" stroke-width="1"/>
+      <!-- Core glow -->
+      <circle cx="140" cy="250" r="8" fill="#00ff64" opacity="0.4" filter="url(#cf5)"/>
+      <!-- Wing-like arm extensions -->
+      <path d="M88,220 Q50,190 30,220 Q50,240 88,240" fill="rgba(0,255,100,0.08)" stroke="#00ff64" stroke-width="1"/>
+      <path d="M192,220 Q230,190 250,220 Q230,240 192,240" fill="rgba(0,255,100,0.08)" stroke="#00ff64" stroke-width="1"/>
+      <!-- Arm veins -->
+      <path d="M88,228 Q60,210 40,220" fill="none" stroke="#00ff64" stroke-width="0.8" opacity="0.5"/>
+      <path d="M192,228 Q220,210 240,220" fill="none" stroke="#00ff64" stroke-width="0.8" opacity="0.5"/>
+      <!-- Neck slim -->
+      <rect x="130" y="168" width="20" height="36" rx="6" fill="rgba(0,255,100,0.1)"/>
+      <!-- Head — organic -->
+      <ellipse cx="140" cy="148" rx="38" ry="36" fill="rgba(0,255,100,0.15)" stroke="#00ff64" stroke-width="2"/>
+      <!-- Leaf crown large -->
+      <ellipse cx="140" cy="124" rx="28" ry="16" fill="rgba(0,255,100,0.1)" stroke="#00ff64" stroke-width="1" transform="rotate(-20,140,124)"/>
+      <ellipse cx="140" cy="118" rx="24" ry="14" fill="rgba(0,255,100,0.1)" stroke="#00ff64" stroke-width="1"/>
+      <ellipse cx="140" cy="112" rx="20" ry="12" fill="rgba(0,255,100,0.15)" stroke="#00ff64" stroke-width="1.2" transform="rotate(20,140,112)"/>
+      <!-- Glowing eyes — large -->
+      <ellipse cx="126" cy="148" rx="10" ry="8" fill="#00ff64" opacity="0.8" filter="url(#cf5)"/>
+      <ellipse cx="154" cy="148" rx="10" ry="8" fill="#00ff64" opacity="0.8" filter="url(#cf5)"/>
+      <!-- Eye pupils -->
+      <ellipse cx="126" cy="148" rx="4" ry="5" fill="rgba(0,0,0,0.6)"/>
+      <ellipse cx="154" cy="148" rx="4" ry="5" fill="rgba(0,0,0,0.6)"/>
+      <!-- Wisp orbs floating -->
+      <circle cx="62" cy="180" r="9" fill="#00ff64" opacity="0.55" filter="url(#cf5)"/>
+      <circle cx="218" cy="165" r="7" fill="#00ff64" opacity="0.5" filter="url(#cf5)"/>
+      <circle cx="230" cy="280" r="5" fill="#00ff64" opacity="0.4" filter="url(#cf5)"/>
+      <circle cx="50" cy="300" r="6" fill="#00ff64" opacity="0.4" filter="url(#cf5)"/>
+      <circle cx="240" cy="360" r="4" fill="#00ff64" opacity="0.3"/>
+      <!-- Connecting wisp trails -->
+      <path d="M62,180 Q100,175 112,200" fill="none" stroke="#00ff64" stroke-width="0.8" opacity="0.3" stroke-dasharray="3,5"/>
+      <path d="M218,165 Q180,175 168,200" fill="none" stroke="#00ff64" stroke-width="0.8" opacity="0.3" stroke-dasharray="3,5"/>
+    </svg>`
+  },
+  {
+    id: 6, name: 'COACH NAME', alias: 'COACH ALIAS', role: 'HEAD COACH', tag: 'COACH',
+    color: '#ff8c00',
+    svg: `<svg viewBox="0 0 280 480" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <radialGradient id="cg6" cx="50%" cy="90%" r="50%">
+          <stop offset="0%" stop-color="#ff8c00" stop-opacity="0.35"/>
+          <stop offset="100%" stop-color="#ff8c00" stop-opacity="0"/>
+        </radialGradient>
+        <filter id="cf6"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+      </defs>
+      <ellipse cx="140" cy="460" rx="90" ry="18" fill="url(#cg6)"/>
+      <!-- Tactical pants -->
+      <rect x="110" y="310" width="24" height="130" rx="5" fill="rgba(255,140,0,0.1)" stroke="#ff8c00" stroke-width="1"/>
+      <rect x="146" y="310" width="24" height="130" rx="5" fill="rgba(255,140,0,0.1)" stroke="#ff8c00" stroke-width="1"/>
+      <!-- Boots -->
+      <rect x="105" y="418" width="35" height="22" rx="4" fill="rgba(255,140,0,0.2)" stroke="#ff8c00" stroke-width="1.2"/>
+      <rect x="140" y="418" width="35" height="22" rx="4" fill="rgba(255,140,0,0.2)" stroke="#ff8c00" stroke-width="1.2"/>
+      <!-- Tactical jacket body -->
+      <rect x="95" y="200" width="90" height="116" rx="7" fill="rgba(255,140,0,0.12)" stroke="#ff8c00" stroke-width="1.5"/>
+      <!-- Jacket lapels -->
+      <polygon points="140,205 120,205 112,260 140,250" fill="rgba(255,140,0,0.08)" stroke="#ff8c00" stroke-width="0.8"/>
+      <polygon points="140,205 160,205 168,260 140,250" fill="rgba(255,140,0,0.08)" stroke="#ff8c00" stroke-width="0.8"/>
+      <!-- Shoulder epaulettes -->
+      <rect x="84" y="198" width="22" height="12" rx="3" fill="rgba(255,140,0,0.3)" stroke="#ff8c00" stroke-width="1.5"/>
+      <rect x="174" y="198" width="22" height="12" rx="3" fill="rgba(255,140,0,0.3)" stroke="#ff8c00" stroke-width="1.5"/>
+      <!-- Medal ribbons -->
+      <rect x="110" y="220" width="6" height="14" rx="1" fill="#ff8c00" opacity="0.7"/>
+      <rect x="120" y="220" width="6" height="14" rx="1" fill="#00f5ff" opacity="0.7"/>
+      <rect x="130" y="220" width="6" height="14" rx="1" fill="#ff0033" opacity="0.7"/>
+      <!-- Tactical board — held left arm -->
+      <rect x="30" y="210" width="60" height="80" rx="4" fill="rgba(255,140,0,0.08)" stroke="#ff8c00" stroke-width="1.5"/>
+      <!-- Board grid lines -->
+      <line x1="30" y1="236" x2="90" y2="236" stroke="#ff8c00" stroke-width="0.5" opacity="0.4"/>
+      <line x1="30" y1="256" x2="90" y2="256" stroke="#ff8c00" stroke-width="0.5" opacity="0.4"/>
+      <line x1="30" y1="276" x2="90" y2="276" stroke="#ff8c00" stroke-width="0.5" opacity="0.4"/>
+      <line x1="50" y1="210" x2="50" y2="290" stroke="#ff8c00" stroke-width="0.5" opacity="0.4"/>
+      <line x1="70" y1="210" x2="70" y2="290" stroke="#ff8c00" stroke-width="0.5" opacity="0.4"/>
+      <!-- Strategy markers -->
+      <circle cx="42" cy="244" r="5" fill="none" stroke="#00f5ff" stroke-width="1.5"/>
+      <circle cx="68" cy="264" r="5" fill="none" stroke="#ff0033" stroke-width="1.5"/>
+      <line x1="42" y1="244" x2="68" y2="264" stroke="#ff8c00" stroke-width="1" stroke-dasharray="3,3" opacity="0.6"/>
+      <!-- Right arm — pointing -->
+      <rect x="185" y="198" width="46" height="18" rx="6" fill="rgba(255,140,0,0.12)" stroke="#ff8c00" stroke-width="1" transform="rotate(-25,208,207)"/>
+      <!-- Neck -->
+      <rect x="128" y="170" width="24" height="34" rx="4" fill="rgba(255,140,0,0.1)"/>
+      <!-- Head — no helmet, tactical cap -->
+      <ellipse cx="140" cy="148" rx="34" ry="30" fill="rgba(255,140,0,0.15)" stroke="#ff8c00" stroke-width="1.8"/>
+      <!-- Cap visor -->
+      <rect x="106" y="136" width="68" height="16" rx="3" fill="rgba(255,140,0,0.2)" stroke="#ff8c00" stroke-width="1.2"/>
+      <polygon points="106,152 88,156 106,148" fill="rgba(255,140,0,0.25)" stroke="#ff8c00" stroke-width="1"/>
+      <!-- Cap logo -->
+      <polygon points="140,120 144,132 156,132 147,139 150,151 140,144 130,151 133,139 124,132 136,132" fill="#ff8c00" opacity="0.6" filter="url(#cf6)"/>
+      <!-- Face features — stern -->
+      <ellipse cx="128" cy="152" rx="6" ry="5" fill="rgba(255,140,0,0.7)" filter="url(#cf6)"/>
+      <ellipse cx="152" cy="152" rx="6" ry="5" fill="rgba(255,140,0,0.7)" filter="url(#cf6)"/>
+      <!-- Headset -->
+      <path d="M106,140 Q106,108 140,108 Q174,108 174,140" fill="none" stroke="#ff8c00" stroke-width="2"/>
+      <rect x="100" y="138" width="14" height="20" rx="4" fill="rgba(255,140,0,0.2)" stroke="#ff8c00" stroke-width="1.2"/>
+      <rect x="166" y="138" width="14" height="20" rx="4" fill="rgba(255,140,0,0.2)" stroke="#ff8c00" stroke-width="1.2"/>
+      <!-- Mic boom -->
+      <path d="M100,152 Q86,158 82,170" fill="none" stroke="#ff8c00" stroke-width="1.2"/>
+      <circle cx="81" cy="172" r="4" fill="#ff8c00" opacity="0.5" filter="url(#cf6)"/>
+    </svg>`
+  },
+  {
+    id: 7, name: 'SUB Name', alias: 'SUB Alias', role: 'BENCH PLAYER', tag: 'BENCH',
+    color: '#c084fc',
+    svg: `<svg viewBox="0 0 280 480" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <radialGradient id="cg7" cx="50%" cy="90%" r="50%">
+          <stop offset="0%" stop-color="#c084fc" stop-opacity="0.35"/>
+          <stop offset="100%" stop-color="#c084fc" stop-opacity="0"/>
+        </radialGradient>
+        <filter id="cf7"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+      </defs>
+      <ellipse cx="140" cy="460" rx="90" ry="18" fill="url(#cg7)"/>
+      <!-- Shadow cloak — wide sweeping -->
+      <path d="M80,230 Q40,260 30,380 Q80,400 140,390 Q200,400 250,380 Q240,260 200,230" fill="rgba(192,132,252,0.06)" stroke="#c084fc" stroke-width="0.8"/>
+      <!-- Legs slim -->
+      <rect x="116" y="330" width="18" height="120" rx="6" fill="rgba(192,132,252,0.12)" stroke="#c084fc" stroke-width="1"/>
+      <rect x="146" y="330" width="18" height="120" rx="6" fill="rgba(192,132,252,0.12)" stroke="#c084fc" stroke-width="1"/>
+      <!-- Agile boots with blade -->
+      <polygon points="108,428 138,428 142,452 104,452" fill="rgba(192,132,252,0.22)" stroke="#c084fc" stroke-width="1.5"/>
+      <polygon points="142,428 172,428 176,452 138,452" fill="rgba(192,132,252,0.22)" stroke="#c084fc" stroke-width="1.5"/>
+      <!-- Slim torso -->
+      <rect x="106" y="210" width="68" height="126" rx="7" fill="rgba(192,132,252,0.11)" stroke="#c084fc" stroke-width="1.2"/>
+      <!-- Chest detail X pattern -->
+      <line x1="112" y1="218" x2="168" y2="290" stroke="#c084fc" stroke-width="0.8" opacity="0.4"/>
+      <line x1="168" y1="218" x2="112" y2="290" stroke="#c084fc" stroke-width="0.8" opacity="0.4"/>
+      <circle cx="140" cy="254" r="10" fill="rgba(192,132,252,0.15)" stroke="#c084fc" stroke-width="1"/>
+      <!-- Arms — one raised, one low -->
+      <rect x="56" y="200" width="50" height="16" rx="5" fill="rgba(192,132,252,0.14)" stroke="#c084fc" stroke-width="1" transform="rotate(-40,81,208)"/>
+      <rect x="174" y="218" width="44" height="16" rx="5" fill="rgba(192,132,252,0.14)" stroke="#c084fc" stroke-width="1" transform="rotate(15,196,226)"/>
+      <!-- Twin daggers -->
+      <!-- Left dagger raised -->
+      <polygon points="50,130 46,190 54,190" fill="rgba(192,132,252,0.25)" stroke="#c084fc" stroke-width="1.5" filter="url(#cf7)"/>
+      <rect x="42" y="186" width="20" height="8" rx="1" fill="#c084fc" opacity="0.6"/>
+      <!-- Right dagger low -->
+      <polygon points="218,280 214,360 222,360" fill="rgba(192,132,252,0.2)" stroke="#c084fc" stroke-width="1.2"/>
+      <rect x="210" y="356" width="18" height="7" rx="1" fill="#c084fc" opacity="0.5"/>
+      <!-- Shoulder pieces — spiked -->
+      <polygon points="106,214 82,195 100,212" fill="rgba(192,132,252,0.3)" stroke="#c084fc" stroke-width="1"/>
+      <polygon points="174,214 198,195 180,212" fill="rgba(192,132,252,0.3)" stroke="#c084fc" stroke-width="1"/>
+      <!-- Neck -->
+      <rect x="128" y="176" width="24" height="38" rx="5" fill="rgba(192,132,252,0.1)"/>
+      <!-- Head — face partially wrapped -->
+      <ellipse cx="140" cy="152" rx="32" ry="32" fill="rgba(192,132,252,0.16)" stroke="#c084fc" stroke-width="2"/>
+      <!-- Face wrap/mask lower half -->
+      <rect x="108" y="158" width="64" height="26" rx="4" fill="rgba(0,0,0,0.5)" stroke="#c084fc" stroke-width="0.8"/>
+      <!-- Eyes — glowing lilac -->
+      <ellipse cx="128" cy="148" rx="9" ry="7" fill="#c084fc" opacity="0.85" filter="url(#cf7)"/>
+      <ellipse cx="152" cy="148" rx="9" ry="7" fill="#c084fc" opacity="0.85" filter="url(#cf7)"/>
+      <!-- Hair spikes up -->
+      <polygon points="122,120 116,90 128,115" fill="rgba(192,132,252,0.3)" stroke="#c084fc" stroke-width="1"/>
+      <polygon points="140,118 138,84 146,116" fill="rgba(192,132,252,0.4)" stroke="#c084fc" stroke-width="1.2"/>
+      <polygon points="158,120 164,90 152,115" fill="rgba(192,132,252,0.3)" stroke="#c084fc" stroke-width="1"/>
+      <!-- Shadow particles -->
+      <circle cx="58" cy="300" r="5" fill="#c084fc" opacity="0.5" filter="url(#cf7)"/>
+      <circle cx="222" cy="150" r="4" fill="#c084fc" opacity="0.45"/>
+      <circle cx="236" cy="240" r="3.5" fill="#c084fc" opacity="0.4"/>
+      <circle cx="44" cy="360" r="3" fill="#c084fc" opacity="0.35"/>
+    </svg>`
+  }
+];
+
+const positions = ['pos-far-left','pos-left','pos-center','pos-right','pos-far-right'];
+let currentIndex = 0;
+const track = document.getElementById('carouselTrack');
+const dotsContainer = document.getElementById('carouselDots');
+const floor = document.getElementById('showcaseFloor');
+const beam = document.getElementById('spotlightBeam');
+let isAnimating = false;
+
+// Build slides
+function buildSlides() {
+  track.innerHTML = '';
+  dotsContainer.innerHTML = '';
+
+  SQUAD.forEach((player, i) => {
+    const slide = document.createElement('div');
+    slide.className = 'showcase-slide';
+    slide.dataset.index = i;
+    slide.innerHTML = `
+      <div class="player-figure" style="--player-color:${player.color}">
+        ${player.svg}
+        <div class="player-shadow"></div>
+      </div>
+      <div class="player-info-panel">
+        <div class="pip-number">#${String(player.id).padStart(2,'0')}</div>
+        <div class="pip-name">${player.name}</div>
+        <div class="pip-alias">${player.alias}</div>
+        <div class="pip-role" style="color:${player.color};border-color:${player.color}">${player.role}</div>
+      </div>
+    `;
+    slide.addEventListener('click', () => {
+      const diff = i - currentIndex;
+      if (diff !== 0 && !isAnimating) navigateTo(i);
+    });
+    track.appendChild(slide);
+
+    const dot = document.createElement('div');
+    dot.className = 'carr-dot';
+    dot.addEventListener('click', () => { if (!isAnimating) navigateTo(i); });
+    dotsContainer.appendChild(dot);
+  });
+
+  updatePositions(false);
+}
+
+function getPositionClass(slideIdx) {
+  const total = SQUAD.length;
+  const diff = ((slideIdx - currentIndex) % total + total) % total;
+  const wrapDiff = diff > total / 2 ? diff - total : diff;
+  if (wrapDiff === 0) return 'pos-center';
+  if (wrapDiff === 1) return 'pos-right';
+  if (wrapDiff === -1) return 'pos-left';
+  if (wrapDiff > 1) return 'pos-far-right';
+  return 'pos-far-left';
+}
+
+function updatePositions(animate = true) {
+  if (!animate) track.querySelectorAll('.showcase-slide').forEach(s => s.style.transition = 'none');
+
+  track.querySelectorAll('.showcase-slide').forEach((slide, i) => {
+    slide.className = 'showcase-slide ' + getPositionClass(i);
+    slide.style.setProperty('--player-color', SQUAD[i].color);
+  });
+
+  // Update dots
+  dotsContainer.querySelectorAll('.carr-dot').forEach((dot, i) => {
+    dot.classList.toggle('active', i === currentIndex);
+    dot.style.background = i === currentIndex ? SQUAD[currentIndex].color : '';
+    dot.style.boxShadow = i === currentIndex ? `0 0 10px ${SQUAD[currentIndex].color}` : '';
+  });
+
+  // Update ambient floor glow + beam color
+  const color = SQUAD[currentIndex].color;
+  floor.style.background = color;
+  beam.style.background = `linear-gradient(to bottom, ${color}09 0%, ${color}05 60%, transparent 100%)`;
+
+  if (!animate) {
+    requestAnimationFrame(() => {
+      track.querySelectorAll('.showcase-slide').forEach(s => s.style.transition = '');
+    });
+  }
+}
+
+function navigateTo(idx) {
+  isAnimating = true;
+  currentIndex = ((idx % SQUAD.length) + SQUAD.length) % SQUAD.length;
+  updatePositions(true);
+  setTimeout(() => { isAnimating = false; }, 700);
+}
+
+document.getElementById('prevBtn').addEventListener('click', () => {
+  if (!isAnimating) navigateTo(currentIndex - 1);
+});
+document.getElementById('nextBtn').addEventListener('click', () => {
+  if (!isAnimating) navigateTo(currentIndex + 1);
+});
+
+// Keyboard nav
+document.addEventListener('keydown', e => {
+  if (e.key === 'ArrowLeft' && !isAnimating) navigateTo(currentIndex - 1);
+  if (e.key === 'ArrowRight' && !isAnimating) navigateTo(currentIndex + 1);
+});
+
+// Auto-play
+let autoPlay = setInterval(() => {
+  if (!isAnimating) navigateTo(currentIndex + 1);
+}, 5000);
+
+document.getElementById('carouselStage').addEventListener('mouseenter', () => clearInterval(autoPlay));
+document.getElementById('carouselStage').addEventListener('mouseleave', () => {
+  autoPlay = setInterval(() => { if (!isAnimating) navigateTo(currentIndex + 1); }, 5000);
+});
+
+// Touch swipe
+let touchStartX = 0;
+document.getElementById('carouselStage').addEventListener('touchstart', e => { touchStartX = e.touches[0].clientX; });
+document.getElementById('carouselStage').addEventListener('touchend', e => {
+  const dx = e.changedTouches[0].clientX - touchStartX;
+  if (Math.abs(dx) > 40) navigateTo(currentIndex + (dx < 0 ? 1 : -1));
+});
+
+buildSlides();
+</script>
+</body>
+</html>
